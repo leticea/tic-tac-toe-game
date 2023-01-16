@@ -6,6 +6,24 @@ body {
 }
 
 h1 {
-  
+  font-size: 2rem;
 }
+
+#container {
+  margin: 5% auto;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.box {
+  display: inline-block;
+  border: 1px solid gray;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+
 
