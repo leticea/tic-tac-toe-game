@@ -41,16 +41,16 @@ function checkWinner(a, b, c) {
     && (span[a].dataset.player === span[c].dataset.player)
     && (span[a].dataset.player === "x" || span[a].dataset.player === "o")
     && isGameOver == false) {
-      span[a].parentNode.className += " activeBox";
-      span[b].parentNode.className += " activeBox";
-      span[c].parentNode.className += " activeBox";
-      isGameOver(a);
-    }
+    span[a].parentNode.className += " activeBox";
+    span[b].parentNode.className += " activeBox";
+    span[c].parentNode.className += " activeBox";
+    isGameOver(a);
+  }
 }
 
 function playAgain() {
   document.getElementsByClassName("alert")[0].parentNode.removeChild
-  (document.getElementsByClassName("alert")[0]);
+    (document.getElementsByClassName("alert")[0]);
   resetGame();
   window.isGameOver = false;
   for (let k = 0; k < span.length; k++) {
@@ -66,3 +66,7 @@ function resetGame() {
   playerTurn = "x";
 }
 
+function gameOver() {
+  let gameOverAlertElement = "<b>GAME OVER</b><br><br> Player " +
+    span[a].dataset.player.toUpperCase() + "Win!! <br><br>" + restartButton;
+}
