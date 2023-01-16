@@ -18,6 +18,17 @@ function play(y) {
     }
   }
 
+  checkWinner(1, 2, 3);
+  checkWinner(4, 5, 6);
+  checkWinner(7, 8, 9);
+  checkWinner(1, 4, 7);
+  checkWinner(2, 5, 8);
+  checkWinner(3, 6, 9);
+  checkWinner(1, 5, 9);
+  checkWinner(3, 5, 7);
 
-  
+  if (moves == 9 && isGameOver == false) {
+    draw();
+  }
 }
+
